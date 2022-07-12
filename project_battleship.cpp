@@ -246,8 +246,7 @@ int main(){
         round2++;
         n=gridsizeEntry();
         array = new int * [n];
-        for (int i=0; i<n; i++)
-        {
+        for (int i=0; i<n; i++){
             array[i] = new int [n];
         }
         array2 = new int * [n];
@@ -338,7 +337,9 @@ int main(){
             //打敵方船
             cout<<"Where do you like to hit your enemy? ( x=-1 to quit )";
             cin>>x;
-            if(x==-1){break;}
+            if(x==-1){
+                break;
+            }
             cin>>y;
             cout<<"Hit or not？（1：Yes，2：No）";
             cin>>yn;
@@ -348,7 +349,7 @@ int main(){
             cout<<"Enemy's grid" << endl;
             gridDisplay(n,array2);
             if(j==0){
-                cout<<"you win"<<"ξ( ✿＞◡❛)▄︻▇▇〓▄︻┻┳═一"<<endl;
+                cout << "you win" << "ξ( ✿＞◡❛)▄︻▇▇〓▄︻┻┳═一" <<endl;
                 i++;
                 break;
             }
